@@ -1,0 +1,2 @@
+Homebrew build logs for homebrew/science/discovardenovo on Ubuntu 16.04.1 LTS
+Build date: 2016-08-05 12:01:21

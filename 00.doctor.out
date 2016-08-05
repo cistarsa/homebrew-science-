@@ -1,0 +1,65 @@
+Please note that these warnings are just used to help the Homebrew maintainers
+with debugging if you file an issue. If everything you use Homebrew for is
+working fine: please don't worry and just ignore them. Thanks!
+
+Warning: "config" scripts exist outside your system or Homebrew directories.
+`./configure` scripts often look for *-config scripts to determine if
+software packages are installed, and what additional flags to use when
+compiling and linking.
+
+Having additional scripts in your path can confuse software installed via
+Homebrew if the config script overrides a system or Homebrew provided
+script of the same name. We found the following "config" scripts:
+    /usr/local/bin/jemalloc-config
+
+Warning: Unbrewed header files were found in /usr/local/include.
+If you didn't put them there on purpose they could cause problems when
+building Homebrew formulae, and may need to be deleted.
+
+Unexpected header files:
+    /usr/local/include/clicknet/tcp.h
+    /usr/local/include/clicknet/rfc1483.h
+    /usr/local/include/clicknet/ip.h
+    /usr/local/include/clicknet/llc.h
+    /usr/local/include/clicknet/icmp.h
+    /usr/local/include/clicknet/udp.h
+    /usr/local/include/clicknet/ether.h
+    /usr/local/include/clicknet/radiotap.h
+    /usr/local/include/clicknet/wifi.h
+    /usr/local/include/clicknet/ppp.h
+    /usr/local/include/clicknet/ip6.h
+    /usr/local/include/clicknet/icmp6.h
+    /usr/local/include/clicknet/fddi.h
+    /usr/local/include/clicknet/dhcp.h
+    /usr/local/include/click/md5.h
+    /usr/local/include/click/fixconfig.h
+    /usr/local/include/click/config.h
+    /usr/local/include/click/simclick.h
+    /usr/local/include/click/pathvars.h
+    /usr/local/include/click/clp.h
+    /usr/local/include/click/cxxunprotect.h
+    /usr/local/include/click/config-userlevel.h
+    /usr/local/include/click/config-bsdmodule.h
+    /usr/local/include/click/config-ns.h
+    /usr/local/include/click/llrpc.h
+    /usr/local/include/click/cxxprotect.h
+    /usr/local/include/click/crc32.h
+    /usr/local/include/click/config-linuxmodule.h
+    /usr/local/include/jemalloc/jemalloc.h
+
+Warning: Unbrewed .pc files were found in /usr/local/lib/pkgconfig.
+If you didn't put them there on purpose they could cause problems when
+building Homebrew formulae, and may need to be deleted.
+
+Unexpected .pc files:
+    /usr/local/lib/pkgconfig/jemalloc.pc
+
+Warning: Unbrewed static libraries were found in /usr/local/lib.
+If you didn't put them there on purpose they could cause problems when
+building Homebrew formulae, and may need to be deleted.
+
+Unexpected static libraries:
+    /usr/local/lib/libjemalloc_pic.a
+    /usr/local/lib/libjemalloc.a
+    /usr/local/lib/libclicktool.a
+    /usr/local/lib/libclick.a
